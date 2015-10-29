@@ -79,17 +79,17 @@ int _tmain(int argc, _TCHAR* argv[])
 	cin >> port;
 
 	//power entry
-	printf(" Please enter the MAX amplitude(DBM): ");
+	printf(" Please enter the MAX amplitude(dBm): ");
 	cin >> pow_max;
 
-	printf(" Please enter the MIN amplitude(DBM): ");
+	printf(" Please enter the MIN amplitude(dBm): ");
 	cin >> pow_min;
 
 	printf(" Please enter the steps of the power sweep: ");
 	cin >> steps;
 
 	//frequency entry
-	printf(" Please enter the desired freqency(MHZ): ");
+	printf(" Please enter the desired freqency(MHz): ");
 	cin >> freq_input;
 	sprintf_s(freq_cmd, ":FREQ %d MHZ", freq_input);
 
@@ -124,26 +124,26 @@ int _tmain(int argc, _TCHAR* argv[])
 
 			//port value is stored on stack
 			//power entry
-			printf("\n Please enter the MAX amplitude(DBM): ");
+			printf(" \n Please enter the MAX amplitude(dBm): ");
 			cin >> pow_max;
 
-			printf("Please enter the MIN amplitude(DBM): ");
+			printf(" Please enter the MIN amplitude(dBm): ");
 			cin >> pow_min;
 
-			printf("Please enter the steps of the power sweep: ");
+			printf(" Please enter the steps of the power sweep: ");
 			cin >> steps;
 
-			//freq entry
-			printf("Please enter the desired freqency: ");
+			//frequency entry
+			printf(" Please enter the desired freqency(MHz): ");
 			cin >> freq_input;
 			sprintf_s(freq_cmd, ":FREQ %d MHZ", freq_input);
 
-
 			//time delay
-			printf("Please enter the desired delay for each instruction during sweep(seconds): ");
+			printf(" Please enter the desired delay for each instruction during sweep(seconds): ");
 			cin >> timeOut;
+			timeOut = timeOut * 1000;
 
-			//Todo: Get this to work
+			//Todo: determine actually break 
 			if (pow_cmd == "break" || freq_cmd == "break")
 			{
 				break;
