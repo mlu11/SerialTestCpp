@@ -18,10 +18,10 @@
     <ClCompile Include="ComPort.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SerialTest.cpp">
+    <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="stdafx.cpp">
+    <ClCompile Include="GPIB.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -32,7 +32,7 @@
     <ClInclude Include="stdafx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SerialTest.h">
+    <ClInclude Include="GPIB.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

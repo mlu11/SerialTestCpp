@@ -90,7 +90,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ComPort.cpp" />
-    <ClCompile Include="SerialTest.cpp" />
+    <ClCompile Include="GPIB.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
@@ -98,7 +98,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ComPort.h" />
-    <ClInclude Include="SerialTest.h" />
+    <ClInclude Include="GPIB.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
